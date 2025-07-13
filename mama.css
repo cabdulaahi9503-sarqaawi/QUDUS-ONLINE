@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f8fa;
+  line-height: 1.6;
+}
+
+/* --------------------- */
+/* NAVBAR */
+/* --------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #005fa3;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.register-btn {
+  background-color: white;
+  color: #005fa3;
+  padding: 8px 14px;
+  border-radius: 5px;
+}
+
+/* --------------------- */
+/* HERO SECTION */
+/* --------------------- */
+.hero-section {
+  background: url("your-background.jpg") no-repeat center center/cover;
+  height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-overlay h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+/* --------------------- */
+/* INTRO SECTION */
+/* --------------------- */
+.intro-section {
+  padding: 30px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.intro-section a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.intro-section a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------- */
+/* COURSES SECTION */
+/* --------------------- */
+.courses-section {
+  padding: 40px 20px;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.course-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.course-card p {
+  margin: 15px 0;
+  color: #f2f2f2;
+}
+
+.course-card button {
+  margin-top: auto;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.course-card button:hover {
+  background-color: #d1e7ff;
+}
+
+.course-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.higaad {
+  background-color: #7964d2;
+  color: white;
+}
+
+.quraan {
+  background-color: #2e49b5;
+  color: white;
+}
+
+.tarbiya {
+  background-color: #2e93a1;
+  color: white;
+}
+
+/* --------------------- */
+/* WHATSAPP ICON */
+/* --------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 10px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .intro-section {
+    font-size: 1rem;
+  }
+
+  .course-card h3 {
+    font-size: 1.3rem;
+  }
+}
+
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+}
+
+.footer .social-icons {
+  margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer .social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: #666;
+}
